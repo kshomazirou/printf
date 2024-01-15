@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ftrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kshoma <kshoma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 21:30:33 by kshoma            #+#    #+#             */
-/*   Updated: 2023/10/03 15:44:24 by kshoma           ###   ########.fr       */
+/*   Updated: 2023/09/26 16:32:23 by kshoma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft
+#include "libft.h"
 
-char	*ftrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	num;
 
-	num = ftlen(s);
+	num = ft_strlen(s);
 	while (num >= 0)
 	{
 		if (s[num] == (char)c)

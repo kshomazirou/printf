@@ -6,7 +6,7 @@
 /*   By: kshoma <kshoma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 21:34:52 by kshoma            #+#    #+#             */
-/*   Updated: 2023/10/03 15:44:18 by kshoma           ###   ########.fr       */
+/*   Updated: 2023/10/02 11:04:35 by kshoma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ int	ft_atoi(const char *str)
 			sign = -1;
 		num++;
 	}
+	if (str[num] < '0' && str[num] > '9')
+	return (0);
 	while (str[num] >= '0' && str[num] <= '9')
 	{
 		if (judge(sign, result, str[num] - '0') == 1)
